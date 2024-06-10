@@ -1,0 +1,1 @@
+import{i as r,w as o}from"./Bg-VryCg.js";function f(l=null,n=[],u=1,t=null){let e=r("lenisScrollCallbacks"),s=r("lenisInstance");return l&&e&&(e.value.push({callback:l,priority:u}),e.value.sort((i,a)=>i.priority-a.priority),t=()=>{e.value=e.value.filter(i=>i.callback!==l)},n.length>0&&o(n,()=>{l(s.value)})),{instance:s,removeCallback:t}}export{f as u};
